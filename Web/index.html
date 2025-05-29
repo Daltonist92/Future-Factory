@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Future Factory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Factory Grid -->
+        <div class="factory-grid">
+            <canvas id="factoryCanvas" width="900" height="750"></canvas>
+        </div>
+        <!-- Info Panel -->
+        <div class="info-panel">
+            <h2>Info Board</h2>
+            <p><strong>Object ID:</strong> <span id="info-id">-</span></p>
+            <p><strong>Tool:</strong> <span id="info-tool">-</span></p>
+            <p><strong>State:</strong> <span id="info-state">-</span></p>
+            <p><strong>OEE:</strong> <span id="info-oee">-</span></p>
+            <!-- Add more metrics as needed -->
+        </div>
+        <!-- Controls -->
+        <div class="controls">
+            <h2>Controls</h2>            
+            <button onclick="addWorkstation()">Add WS</button>
+            <button onclick="addInventory()">Add INV</button>
+			<button onclick="undoDelete()">Undo Last Delete</button>
+			<button onclick="runTurn()">Run Turn</button>
+            <button onclick="toggleAuto()">Start Auto</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.factory-grid {
+    flex: 3;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.info-panel {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.controls {
+    flex: 1;
+    max-width: 200px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,381 @@
+{
+    "machines": [
+        [
+            "WS2",
+            6,
+            12
+        ],
+        [
+            "WS3",
+            23,
+            23
+        ],
+        [
+            "WS4",
+            23,
+            7
+        ],
+        [
+            "WS6",
+            11,
+            7
+        ],
+        [
+            "WS7",
+            7,
+            7
+        ],
+        [
+            "WS9",
+            6,
+            23
+        ],
+        [
+            "WS10",
+            15,
+            12
+        ],
+        [
+            "WS12",
+            6,
+            20
+        ],
+        [
+            "WS13",
+            15,
+            2
+        ],
+        [
+            "WS14",
+            6,
+            16
+        ],
+        [
+            "WS15",
+            15,
+            7
+        ],
+        [
+            "WS16",
+            12,
+            23
+        ],
+        [
+            "WS5",
+            17,
+            19
+        ]
+    ],
+    "inventories": [
+        [
+            "INV_IRON",
+            2,
+            2
+        ],
+        [
+            "INV_COAL",
+            2,
+            7
+        ],
+        [
+            "INV_COPPER",
+            2,
+            12
+        ],
+        [
+            "INV_GLASS",
+            2,
+            16
+        ],
+        [
+            "INV_RUBBER",
+            2,
+            20
+        ],
+        [
+            "INV_Final",
+            27,
+            2
+        ]
+    ],
+    "arrows": {
+        "FLOW4": {
+            "start_id": "INV_COPPER",
+            "start_pos": "right",
+            "end_id": "WS2",
+            "end_pos": "left"
+        },
+        "FLOW5": {
+            "start_id": "WS2",
+            "start_pos": "right",
+            "end_id": "WS6",
+            "end_pos": "left"
+        },
+        "FLOW6": {
+            "start_id": "INV_IRON",
+            "start_pos": "right",
+            "end_id": "WS7",
+            "end_pos": "left"
+        },
+        "FLOW7": {
+            "start_id": "INV_COAL",
+            "start_pos": "right",
+            "end_id": "WS7",
+            "end_pos": "left"
+        },
+        "FLOW8": {
+            "start_id": "WS7",
+            "start_pos": "right",
+            "end_id": "WS6",
+            "end_pos": "left"
+        },
+        "FLOW10": {
+            "start_id": "WS6",
+            "start_pos": "bottom",
+            "end_id": "WS10",
+            "end_pos": "top"
+        },
+        "FLOW11": {
+            "start_id": "WS2",
+            "start_pos": "right",
+            "end_id": "WS10",
+            "end_pos": "left"
+        },
+        "FLOW14": {
+            "start_id": "INV_RUBBER",
+            "start_pos": "right",
+            "end_id": "WS12",
+            "end_pos": "left"
+        },
+        "FLOW15": {
+            "start_id": "INV_RUBBER",
+            "start_pos": "right",
+            "end_id": "WS9",
+            "end_pos": "left"
+        },
+        "FLOW16": {
+            "start_id": "INV1",
+            "start_pos": "right",
+            "end_id": "WS13",
+            "end_pos": "left"
+        },
+        "FLOW17": {
+            "start_id": "INV_GLASS",
+            "start_pos": "right",
+            "end_id": "WS14",
+            "end_pos": "left"
+        },
+        "FLOW18": {
+            "start_id": "WS2",
+            "start_pos": "right",
+            "end_id": "WS15",
+            "end_pos": "bottom"
+        },
+        "FLOW19": {
+            "start_id": "WS13",
+            "start_pos": "bottom",
+            "end_id": "WS15",
+            "end_pos": "top"
+        },
+        "FLOW20": {
+            "start_id": "WS15",
+            "start_pos": "right",
+            "end_id": "WS4",
+            "end_pos": "left"
+        },
+        "FLOW21": {
+            "start_id": "WS9",
+            "start_pos": "right",
+            "end_id": "WS16",
+            "end_pos": "left"
+        },
+        "FLOW23": {
+            "start_id": "WS12",
+            "start_pos": "right",
+            "end_id": "WS5",
+            "end_pos": "left"
+        },
+        "FLOW24": {
+            "start_id": "WS14",
+            "start_pos": "right",
+            "end_id": "WS5",
+            "end_pos": "left"
+        },
+        "FLOW26": {
+            "start_id": "WS5",
+            "start_pos": "right",
+            "end_id": "WS4",
+            "end_pos": "bottom"
+        },
+        "FLOW27": {
+            "start_id": "WS16",
+            "start_pos": "right",
+            "end_id": "WS3",
+            "end_pos": "left"
+        },
+        "FLOW28": {
+            "start_id": "WS3",
+            "start_pos": "top",
+            "end_id": "WS4",
+            "end_pos": "bottom"
+        },
+        "FLOW29": {
+            "start_id": "WS5",
+            "start_pos": "left",
+            "end_id": "WS6",
+            "end_pos": "bottom"
+        }
+    },
+    "machine_tools": {
+        "WS2": {
+            "category": "Component Assembly",
+            "inputs": {
+                "RAW_COPPER": 1
+            },
+            "outputs": {
+                "COMP_WIRE": 1
+            },
+            "cycle_time": 3,
+            "name": "Wire Drawer"
+        },
+        "WS3": {
+            "category": "Final Assembly",
+            "inputs": {
+                "COMP_CHASSIS": 1,
+                "FIN_WHEELS": 1
+            },
+            "outputs": {
+                "COMP_BODY": 1
+            },
+            "cycle_time": 7,
+            "name": "Body Mounter"
+        },
+        "WS4": {
+            "category": "Final Assembly",
+            "inputs": {
+                "COMP_BODY": 1,
+                "FIN_POWERTRAIN": 1,
+                "FIN_CABIN": 1
+            },
+            "outputs": {
+                "NEW_CAR": 1
+            },
+            "cycle_time": 10,
+            "name": "Car Assembler"
+        },
+        "WS5": {
+            "category": "Final Assembly",
+            "inputs": {
+                "COMP_SEAT": 1,
+                "COMP_WINDOW": 1
+            },
+            "outputs": {
+                "FIN_CABIN": 1
+            },
+            "cycle_time": 6,
+            "name": "Cabin Fitter"
+        },
+        "WS6": {
+            "category": "Component Assembly",
+            "inputs": {
+                "COMP_STEEL": 1
+            },
+            "outputs": {
+                "COMP_CASTING": 1
+            },
+            "cycle_time": 6,
+            "name": "Forge"
+        },
+        "WS7": {
+            "category": "Raw Processing",
+            "inputs": {
+                "RAW_IRON": 1,
+                "RAW_COAL": 1
+            },
+            "outputs": {
+                "COMP_STEEL": 1
+            },
+            "cycle_time": 5,
+            "name": "Smelter"
+        },
+        "WS9": {
+            "category": "Component Assembly",
+            "inputs": {
+                "RAW_RUBBER": 1
+            },
+            "outputs": {
+                "COMP_TIRE": 1
+            },
+            "cycle_time": 3,
+            "name": "Tire Press"
+        },
+        "WS10": {
+            "category": "Component Assembly",
+            "inputs": {
+                "COMP_CASTING": 1,
+                "COMP_WIRE": 1
+            },
+            "outputs": {
+                "COMP_CHASSIS": 1
+            },
+            "cycle_time": 7,
+            "name": "Chassis Welder"
+        },
+        "WS12": {
+            "category": "Component Assembly",
+            "inputs": {
+                "RAW_RUBBER": 1
+            },
+            "outputs": {
+                "COMP_SEAT": 1
+            },
+            "cycle_time": 4,
+            "name": "Seat Upholsterer"
+        },
+        "WS13": {
+            "category": "Component Assembly",
+            "inputs": {
+                "COMP_STEEL": 1
+            },
+            "outputs": {
+                "COMP_ENGINE": 1
+            },
+            "cycle_time": 7,
+            "name": "Engine Machinist"
+        },
+        "WS14": {
+            "category": "Component Assembly",
+            "inputs": {
+                "RAW_GLASS": 1
+            },
+            "outputs": {
+                "COMP_WINDOW": 1
+            },
+            "cycle_time": 3,
+            "name": "Glass Cutter"
+        },
+        "WS15": {
+            "category": "Final Assembly",
+            "inputs": {
+                "COMP_WIRE": 1,
+                "COMP_ENGINE": 1
+            },
+            "outputs": {
+                "FIN_POWERTRAIN": 1
+            },
+            "cycle_time": 8,
+            "name": "Powertrain Builder"
+        },
+        "WS16": {
+            "category": "Final Assembly",
+            "inputs": {
+                "COMP_TIRE": 1
+            },
+            "outputs": {
+                "FIN_WHEELS": 1
+            },
+            "cycle_time": 2,
+            "name": "Wheel Assembler"
+        }
+    }
+}

@@ -1,0 +1,1808 @@
+{
+    "scenario": "Car Factory Built",
+    "machines": [
+        {
+            "id": "WS1",
+            "x": 7,
+            "y": 1
+        },
+        {
+            "id": "WS2",
+            "x": 7,
+            "y": 4
+        },
+        {
+            "id": "WS7",
+            "x": 7,
+            "y": 7
+        },
+        {
+            "id": "WS6",
+            "x": 7,
+            "y": 10
+        },
+        {
+            "id": "WS10",
+            "x": 7,
+            "y": 16
+        },
+        {
+            "id": "WS11",
+            "x": 7,
+            "y": 19
+        },
+        {
+            "id": "WS12",
+            "x": 16,
+            "y": 18
+        },
+        {
+            "id": "WS13",
+            "x": 28,
+            "y": 6
+        },
+        {
+            "id": "WS9",
+            "x": 11,
+            "y": 23
+        },
+        {
+            "id": "WS16",
+            "x": 18,
+            "y": 6
+        },
+        {
+            "id": "WS3",
+            "x": 18,
+            "y": 2
+        },
+        {
+            "id": "WS17",
+            "x": 7,
+            "y": 13
+        },
+        {
+            "id": "WS4",
+            "x": 11,
+            "y": 14
+        },
+        {
+            "id": "WS14",
+            "x": 18,
+            "y": 9
+        },
+        {
+            "id": "WS18",
+            "x": 24,
+            "y": 17
+        },
+        {
+            "id": "WS15",
+            "x": 7,
+            "y": 22
+        },
+        {
+            "id": "WS19",
+            "x": 11,
+            "y": 17
+        }
+    ],
+    "inventories": [
+        {
+            "id": "INV_STEEL",
+            "x": 2,
+            "y": 2
+        },
+        {
+            "id": "INV_COAL",
+            "x": 2,
+            "y": 7
+        },
+        {
+            "id": "INV_COPPER",
+            "x": 2,
+            "y": 12
+        },
+        {
+            "id": "INV_Final",
+            "x": 28,
+            "y": 2
+        },
+        {
+            "id": "INV_RUBBER",
+            "x": 2,
+            "y": 17
+        },
+        {
+            "id": "INV6",
+            "x": 24,
+            "y": 6
+        },
+        {
+            "id": "INV4",
+            "x": 28,
+            "y": 10
+        },
+        {
+            "id": "INV5",
+            "x": 24,
+            "y": 10
+        },
+        {
+            "id": "INV_GLASS",
+            "x": 2,
+            "y": 23
+        },
+        {
+            "id": "INV2",
+            "x": 11,
+            "y": 10
+        },
+        {
+            "id": "INV3",
+            "x": 11,
+            "y": 20
+        },
+        {
+            "id": "INV1",
+            "x": 11,
+            "y": 4
+        },
+        {
+            "id": "INV7",
+            "x": 15,
+            "y": 13
+        },
+        {
+            "id": "INV8",
+            "x": 18,
+            "y": 23
+        }
+    ],
+    "arrows": {
+        "FLOW1": {
+            "start_id": "INV_COAL",
+            "start_pos": "right",
+            "end_id": "WS2",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW2": {
+            "start_id": "INV_STEEL",
+            "start_pos": "right",
+            "end_id": "WS1",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW3": {
+            "start_id": "WS2",
+            "start_pos": "right",
+            "end_id": "INV1",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW4": {
+            "start_id": "WS1",
+            "start_pos": "right",
+            "end_id": "INV1",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW5": {
+            "start_id": "INV1",
+            "start_pos": "right",
+            "end_id": "WS3",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW6": {
+            "start_id": "INV_STEEL",
+            "start_pos": "right",
+            "end_id": "WS2",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW7": {
+            "start_id": "INV_COAL",
+            "start_pos": "right",
+            "end_id": "WS1",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW8": {
+            "start_id": "INV_COAL",
+            "start_pos": "right",
+            "end_id": "WS7",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW9": {
+            "start_id": "INV_STEEL",
+            "start_pos": "right",
+            "end_id": "WS7",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW10": {
+            "start_id": "WS7",
+            "start_pos": "right",
+            "end_id": "INV1",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW11": {
+            "start_id": "INV_RUBBER",
+            "start_pos": "right",
+            "end_id": "WS6",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW12": {
+            "start_id": "INV_COPPER",
+            "start_pos": "right",
+            "end_id": "WS6",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW16": {
+            "start_id": "WS6",
+            "start_pos": "right",
+            "end_id": "INV2",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW18": {
+            "start_id": "INV_RUBBER",
+            "start_pos": "right",
+            "end_id": "WS4",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW20": {
+            "start_id": "INV_RUBBER",
+            "start_pos": "right",
+            "end_id": "WS10",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW21": {
+            "start_id": "WS10",
+            "start_pos": "right",
+            "end_id": "INV3",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW22": {
+            "start_id": "INV_GLASS",
+            "start_pos": "right",
+            "end_id": "WS9",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW23": {
+            "start_id": "WS11",
+            "start_pos": "right",
+            "end_id": "INV3",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW24": {
+            "start_id": "INV1",
+            "start_pos": "bottom",
+            "end_id": "WS12",
+            "end_pos": "top",
+            "priority": 0.5
+        },
+        "FLOW25": {
+            "start_id": "INV3",
+            "start_pos": "right",
+            "end_id": "WS12",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW26": {
+            "start_id": "WS13",
+            "start_pos": "top",
+            "end_id": "INV_Final",
+            "end_pos": "bottom",
+            "priority": 0.5
+        },
+        "FLOW27": {
+            "start_id": "INV2",
+            "start_pos": "right",
+            "end_id": "WS14",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW28": {
+            "start_id": "INV_RUBBER",
+            "start_pos": "right",
+            "end_id": "WS19",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW29": {
+            "start_id": "WS19",
+            "start_pos": "right",
+            "end_id": "INV7",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW30": {
+            "start_id": "INV_RUBBER",
+            "start_pos": "right",
+            "end_id": "WS15",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW31": {
+            "start_id": "WS14",
+            "start_pos": "right",
+            "end_id": "INV5",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW32": {
+            "start_id": "INV2",
+            "start_pos": "right",
+            "end_id": "WS16",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW33": {
+            "start_id": "WS3",
+            "start_pos": "bottom",
+            "end_id": "WS16",
+            "end_pos": "top",
+            "priority": 1.0
+        },
+        "FLOW34": {
+            "start_id": "WS16",
+            "start_pos": "right",
+            "end_id": "INV6",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW35": {
+            "start_id": "INV_COPPER",
+            "start_pos": "right",
+            "end_id": "WS17",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW36": {
+            "start_id": "WS17",
+            "start_pos": "right",
+            "end_id": "INV2",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW37": {
+            "start_id": "WS15",
+            "start_pos": "right",
+            "end_id": "INV3",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW38": {
+            "start_id": "INV5",
+            "start_pos": "right",
+            "end_id": "WS13",
+            "end_pos": "bottom",
+            "priority": 0.5
+        },
+        "FLOW39": {
+            "start_id": "INV6",
+            "start_pos": "right",
+            "end_id": "WS13",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW40": {
+            "start_id": "INV4",
+            "start_pos": "top",
+            "end_id": "WS13",
+            "end_pos": "bottom",
+            "priority": 0.5
+        },
+        "FLOW41": {
+            "start_id": "WS12",
+            "start_pos": "right",
+            "end_id": "WS18",
+            "end_pos": "left",
+            "priority": 1.0
+        },
+        "FLOW42": {
+            "start_id": "INV1",
+            "start_pos": "bottom",
+            "end_id": "WS18",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW43": {
+            "start_id": "INV_RUBBER",
+            "start_pos": "right",
+            "end_id": "WS11",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW44": {
+            "start_id": "INV_RUBBER",
+            "start_pos": "right",
+            "end_id": "WS17",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW45": {
+            "start_id": "WS18",
+            "start_pos": "top",
+            "end_id": "INV4",
+            "end_pos": "bottom",
+            "priority": 0.5
+        },
+        "FLOW46": {
+            "start_id": "WS4",
+            "start_pos": "right",
+            "end_id": "INV7",
+            "end_pos": "left",
+            "priority": 0.5
+        },
+        "FLOW47": {
+            "start_id": "INV7",
+            "start_pos": "right",
+            "end_id": "WS14",
+            "end_pos": "bottom",
+            "priority": 0.5
+        },
+        "FLOW48": {
+            "start_id": "INV8",
+            "start_pos": "top",
+            "end_id": "WS14",
+            "end_pos": "bottom",
+            "priority": 0.5
+        },
+        "FLOW49": {
+            "start_id": "WS9",
+            "start_pos": "right",
+            "end_id": "INV8",
+            "end_pos": "left",
+            "priority": 0.5
+        }
+    },
+    "machine_tools": {
+        "WS1": {
+            "category": "Raw Processing",
+            "inputs": {
+                "COMP_STEEL": 1,
+                "RAW_COAL": 1
+            },
+            "outputs": {
+                "COMP_CASTING": 1
+            },
+            "cycle_time": 5,
+            "costs": {
+                "idle": 1,
+                "processing": 8,
+                "ready": 2
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 50,
+            "wear": 15
+        },
+        "WS2": {
+            "category": "Raw Processing",
+            "inputs": {
+                "COMP_STEEL": 1,
+                "RAW_COAL": 1
+            },
+            "outputs": {
+                "COMP_CASTING": 1
+            },
+            "cycle_time": 5,
+            "costs": {
+                "idle": 1,
+                "processing": 8,
+                "ready": 2
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 50,
+            "wear": 15
+        },
+        "WS3": {
+            "category": "Components",
+            "inputs": {
+                "COMP_CASTING": 1
+            },
+            "outputs": {
+                "COMP_ENGINE": 1
+            },
+            "cycle_time": 7,
+            "costs": {
+                "idle": 1,
+                "processing": 8,
+                "ready": 2
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 80,
+            "wear": 3
+        },
+        "WS4": {
+            "category": "Raw Processing",
+            "inputs": {
+                "RAW_RUBBER": 1
+            },
+            "outputs": {
+                "COMP_SEAT": 1
+            },
+            "cycle_time": 3,
+            "costs": {
+                "idle": 1,
+                "processing": 7,
+                "ready": 1
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 65,
+            "wear": 15
+        },
+        "WS6": {
+            "category": "Raw Processing",
+            "inputs": {
+                "RAW_COPPER": 1,
+                "RAW_RUBBER": 1
+            },
+            "outputs": {
+                "COMP_WIRE": 1
+            },
+            "cycle_time": 3,
+            "costs": {
+                "idle": 1,
+                "processing": 6,
+                "ready": 1
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 60,
+            "wear": 14
+        },
+        "WS7": {
+            "category": "Raw Processing",
+            "inputs": {
+                "COMP_STEEL": 1,
+                "RAW_COAL": 1
+            },
+            "outputs": {
+                "COMP_CASTING": 1
+            },
+            "cycle_time": 5,
+            "costs": {
+                "idle": 1,
+                "processing": 8,
+                "ready": 2
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 50,
+            "wear": 15
+        },
+        "WS9": {
+            "category": "Raw Processing",
+            "inputs": {
+                "RAW_GLASS": 1
+            },
+            "outputs": {
+                "COMP_WINDOW": 1
+            },
+            "cycle_time": 3,
+            "costs": {
+                "idle": 1,
+                "processing": 5,
+                "ready": 1
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 50,
+            "wear": 8
+        },
+        "WS10": {
+            "category": "Raw Processing",
+            "inputs": {
+                "RAW_RUBBER": 1
+            },
+            "outputs": {
+                "COMP_TIRE": 1
+            },
+            "cycle_time": 3,
+            "costs": {
+                "idle": 1,
+                "processing": 6,
+                "ready": 1
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 70,
+            "wear": 17
+        },
+        "WS11": {
+            "category": "Raw Processing",
+            "inputs": {
+                "RAW_RUBBER": 1
+            },
+            "outputs": {
+                "COMP_TIRE": 1
+            },
+            "cycle_time": 3,
+            "costs": {
+                "idle": 1,
+                "processing": 6,
+                "ready": 1
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 70,
+            "wear": 17
+        },
+        "WS12": {
+            "category": "Components",
+            "inputs": {
+                "COMP_TIRE": 4,
+                "COMP_CASTING": 1
+            },
+            "outputs": {
+                "COMP_WHEELS": 1
+            },
+            "cycle_time": 3,
+            "costs": {
+                "idle": 1,
+                "processing": 7,
+                "ready": 1
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 90,
+            "wear": 3
+        },
+        "WS13": {
+            "category": "Final Assembly",
+            "inputs": {
+                "COMP_BODY": 1,
+                "COMP_POWERTRAIN": 1,
+                "COMP_CHASSIS": 1
+            },
+            "outputs": {
+                "NEW_CAR": 1
+            },
+            "cycle_time": 7,
+            "costs": {
+                "idle": 2,
+                "processing": 15,
+                "ready": 3
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 150,
+            "wear": 1
+        },
+        "WS14": {
+            "category": "Final Assembly",
+            "inputs": {
+                "COMP_WINDOW": 2,
+                "COMP_SEAT": 2,
+                "COMP_WIRE": 1
+            },
+            "outputs": {
+                "COMP_BODY": 1
+            },
+            "cycle_time": 7,
+            "costs": {
+                "idle": 2,
+                "processing": 12,
+                "ready": 3
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 120,
+            "wear": 2
+        },
+        "WS15": {
+            "category": "Raw Processing",
+            "inputs": {
+                "RAW_RUBBER": 1
+            },
+            "outputs": {
+                "COMP_TIRE": 1
+            },
+            "cycle_time": 3,
+            "costs": {
+                "idle": 1,
+                "processing": 6,
+                "ready": 1
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 70,
+            "wear": 17
+        },
+        "WS16": {
+            "category": "Final Assembly",
+            "inputs": {
+                "COMP_ENGINE": 1,
+                "COMP_WIRE": 1
+            },
+            "outputs": {
+                "COMP_POWERTRAIN": 1
+            },
+            "cycle_time": 7,
+            "costs": {
+                "idle": 2,
+                "processing": 10,
+                "ready": 2
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 100,
+            "wear": 3
+        },
+        "WS17": {
+            "category": "Raw Processing",
+            "inputs": {
+                "RAW_COPPER": 1,
+                "RAW_RUBBER": 1
+            },
+            "outputs": {
+                "COMP_WIRE": 1
+            },
+            "cycle_time": 3,
+            "costs": {
+                "idle": 1,
+                "processing": 6,
+                "ready": 1
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 60,
+            "wear": 14
+        },
+        "WS18": {
+            "category": "Final Assembly",
+            "inputs": {
+                "COMP_WHEELS": 1,
+                "COMP_CASTING": 1
+            },
+            "outputs": {
+                "COMP_CHASSIS": 1
+            },
+            "cycle_time": 7,
+            "costs": {
+                "idle": 2,
+                "processing": 11,
+                "ready": 2
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 110,
+            "wear": 3
+        },
+        "WS19": {
+            "category": "Raw Processing",
+            "inputs": {
+                "RAW_RUBBER": 1
+            },
+            "outputs": {
+                "COMP_SEAT": 1
+            },
+            "cycle_time": 3,
+            "costs": {
+                "idle": 1,
+                "processing": 7,
+                "ready": 1
+            },
+            "detection_rate": 1.0,
+            "lifecycle": 65,
+            "wear": 15
+        }
+    },
+    "inventory_accepts": {
+        "INV_STEEL": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV_COAL": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV_COPPER": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV_GLASS": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV_RUBBER": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV_Final": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV1": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV2": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV3": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV4": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV5": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV6": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV7": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ],
+        "INV8": [
+            "RAW_COAL",
+            "RAW_COPPER",
+            "RAW_GLASS",
+            "RAW_RUBBER",
+            "COMP_STEEL",
+            "COMP_WIRE",
+            "COMP_WINDOW",
+            "COMP_TIRE",
+            "COMP_SEAT",
+            "COMP_ENGINE",
+            "COMP_CASTING",
+            "COMP_WHEELS",
+            "COMP_BODY",
+            "COMP_POWERTRAIN",
+            "COMP_CHASSIS",
+            "NEW_CAR"
+        ]
+    },
+    "machine_states": {
+        "WS1": 2,
+        "WS2": 2,
+        "WS3": 2,
+        "WS4": 2,
+        "WS6": 2,
+        "WS7": 2,
+        "WS9": 3,
+        "WS10": 1,
+        "WS11": 2,
+        "WS12": 2,
+        "WS13": 4,
+        "WS14": 2,
+        "WS15": 4,
+        "WS16": 3,
+        "WS17": 2,
+        "WS18": 3,
+        "WS19": 4
+    },
+    "machine_cycles": {
+        "WS1": 2,
+        "WS2": 2,
+        "WS3": 5,
+        "WS4": 1,
+        "WS6": 2,
+        "WS7": 5,
+        "WS9": 0,
+        "WS10": 0,
+        "WS11": 2,
+        "WS12": 1,
+        "WS13": 0,
+        "WS14": 4,
+        "WS15": 0,
+        "WS16": 0,
+        "WS17": 2,
+        "WS18": 0,
+        "WS19": 0
+    },
+    "game_time": 47,
+    "turns": 47,
+    "money": -2048,
+    "orders": [],
+    "deliveries": [],
+    "materials_at_machine": {
+        "WS1": [
+            {
+                "id": "STEEL232",
+                "state": "COMP_STEEL",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "COAL237",
+                "state": "RAW_COAL",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS2": [
+            {
+                "id": "COAL238",
+                "state": "RAW_COAL",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "STEEL233",
+                "state": "COMP_STEEL",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS7": [
+            {
+                "id": "COAL239",
+                "state": "RAW_COAL",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "STEEL234",
+                "state": "COMP_STEEL",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS6": [
+            {
+                "id": "RUBBER303",
+                "state": "RAW_RUBBER",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "COPPER244",
+                "state": "RAW_COPPER",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS10": [],
+        "WS11": [
+            {
+                "id": "RUBBER305",
+                "state": "RAW_RUBBER",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS12": [
+            {
+                "id": "MAT260",
+                "state": "COMP_CASTING",
+                "parent_ids": [
+                    "STEEL187",
+                    "COAL192"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "MAT267",
+                "state": "COMP_TIRE",
+                "parent_ids": [
+                    "RUBBER255"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "MAT268",
+                "state": "COMP_TIRE",
+                "parent_ids": [
+                    "RUBBER254"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "MAT311",
+                "state": "COMP_TIRE",
+                "parent_ids": [
+                    "RUBBER296"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "MAT315",
+                "state": "COMP_TIRE",
+                "parent_ids": [
+                    "RUBBER300"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS13": [],
+        "WS9": [
+            {
+                "id": "MAT318",
+                "state": "COMP_WINDOW",
+                "parent_ids": [
+                    "GLASS202"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS16": [
+            {
+                "id": "MAT319",
+                "state": "COMP_POWERTRAIN",
+                "parent_ids": [
+                    "MAT176",
+                    "MAT277"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS3": [
+            {
+                "id": "MAT270",
+                "state": "COMP_CASTING",
+                "parent_ids": [
+                    "COAL193",
+                    "STEEL188"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS17": [
+            {
+                "id": "COPPER245",
+                "state": "RAW_COPPER",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "RUBBER304",
+                "state": "RAW_RUBBER",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS4": [
+            {
+                "id": "RUBBER302",
+                "state": "RAW_RUBBER",
+                "parent_ids": [],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS14": [
+            {
+                "id": "MAT183",
+                "state": "COMP_WIRE",
+                "parent_ids": [
+                    "RUBBER166",
+                    "COPPER153"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "MAT175",
+                "state": "COMP_SEAT",
+                "parent_ids": [
+                    "RUBBER162"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "MAT184",
+                "state": "COMP_SEAT",
+                "parent_ids": [
+                    "RUBBER167"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "MAT261",
+                "state": "COMP_WINDOW",
+                "parent_ids": [
+                    "GLASS157"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            },
+            {
+                "id": "MAT271",
+                "state": "COMP_WINDOW",
+                "parent_ids": [
+                    "GLASS158"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS18": [
+            {
+                "id": "MAT317",
+                "state": "COMP_CHASSIS",
+                "parent_ids": [
+                    "MAT278",
+                    "MAT227"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ],
+        "WS15": [],
+        "WS19": [
+            {
+                "id": "MAT313",
+                "state": "COMP_SEAT",
+                "parent_ids": [
+                    "MAT265",
+                    "RUBBER298"
+                ],
+                "quality": 1.0,
+                "fault_detected": false
+            }
+        ]
+    },
+    "inventory_stocks": {
+        "INV_STEEL": {
+            "COMP_STEEL": [
+                {
+                    "id": "STEEL235",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "STEEL236",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "STEEL279",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "STEEL280",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "STEEL281",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "STEEL282",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "STEEL283",
+                    "quality": 1.0,
+                    "fault_detected": false
+                }
+            ]
+        },
+        "INV_COAL": {
+            "RAW_COAL": [
+                {
+                    "id": "COAL240",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "COAL241",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "COAL284",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "COAL285",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "COAL286",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "COAL287",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "COAL288",
+                    "quality": 1.0,
+                    "fault_detected": false
+                }
+            ]
+        },
+        "INV_COPPER": {
+            "RAW_COPPER": [
+                {
+                    "id": "COPPER289",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "COPPER290",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "COPPER291",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "COPPER292",
+                    "quality": 1.0,
+                    "fault_detected": false
+                }
+            ]
+        },
+        "INV_Final": {
+            "NEW_CAR": []
+        },
+        "INV_RUBBER": {
+            "RAW_RUBBER": []
+        },
+        "INV6": {
+            "COMP_POWERTRAIN": []
+        },
+        "INV4": {
+            "COMP_CHASSIS": [
+                {
+                    "id": "MAT273",
+                    "quality": 1.0,
+                    "fault_detected": false
+                }
+            ]
+        },
+        "INV5": {
+            "COMP_BODY": [
+                {
+                    "id": "MAT272",
+                    "quality": 1.0,
+                    "fault_detected": false
+                }
+            ]
+        },
+        "INV_GLASS": {
+            "RAW_GLASS": [
+                {
+                    "id": "GLASS203",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "GLASS246",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "GLASS247",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "GLASS248",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "GLASS293",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "GLASS294",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "GLASS295",
+                    "quality": 1.0,
+                    "fault_detected": false
+                }
+            ]
+        },
+        "INV2": {
+            "COMP_WIRE": [
+                {
+                    "id": "MAT217",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT221",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT263",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT266",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT274",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT276",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT312",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT314",
+                    "quality": 1.0,
+                    "fault_detected": false
+                }
+            ]
+        },
+        "INV3": {
+            "COMP_TIRE": [
+                {
+                    "id": "MAT316",
+                    "quality": 1.0,
+                    "fault_detected": false
+                }
+            ]
+        },
+        "INV1": {
+            "COMP_CASTING": [
+                {
+                    "id": "MAT306",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT307",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT310",
+                    "quality": 1.0,
+                    "fault_detected": false
+                }
+            ]
+        },
+        "INV7": {
+            "COMP_SEAT": [
+                {
+                    "id": "MAT185",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT219",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT220",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT230",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT231",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT264",
+                    "quality": 1.0,
+                    "fault_detected": false
+                },
+                {
+                    "id": "MAT275",
+                    "quality": 1.0,
+                    "fault_detected": false
+                }
+            ]
+        },
+        "INV8": {
+            "COMP_WINDOW": [
+                {
+                    "id": "MAT309",
+                    "quality": 1.0,
+                    "fault_detected": false
+                }
+            ]
+        }
+    },
+    "breakdown_risk": {
+        "WS1": 1,
+        "WS2": 3,
+        "WS7": 0,
+        "WS6": 3,
+        "WS10": 1,
+        "WS11": 2,
+        "WS12": 1,
+        "WS13": 0,
+        "WS9": 5,
+        "WS16": 2,
+        "WS3": 0,
+        "WS17": 4,
+        "WS4": 0,
+        "WS14": 0,
+        "WS18": 2,
+        "WS15": 0,
+        "WS19": 0
+    },
+    "alert_active": {
+        "WS1": false,
+        "WS2": false,
+        "WS7": false,
+        "WS6": false,
+        "WS10": false,
+        "WS11": false,
+        "WS12": false,
+        "WS13": false,
+        "WS9": false,
+        "WS16": false,
+        "WS3": false,
+        "WS17": false,
+        "WS4": false,
+        "WS14": false,
+        "WS18": false,
+        "WS15": false,
+        "WS19": false
+    },
+    "turns_since_alert": {
+        "WS1": 0,
+        "WS2": 0,
+        "WS7": 0,
+        "WS6": 0,
+        "WS10": 0,
+        "WS11": 0,
+        "WS12": 0,
+        "WS13": 0,
+        "WS9": 0,
+        "WS16": 0,
+        "WS3": 0,
+        "WS17": 0,
+        "WS4": 0,
+        "WS14": 0,
+        "WS18": 0,
+        "WS15": 0,
+        "WS19": 0
+    },
+    "maintenance_turns": {
+        "WS1": 0,
+        "WS2": 0,
+        "WS7": 0,
+        "WS6": 0,
+        "WS10": 0,
+        "WS11": 0,
+        "WS12": 0,
+        "WS13": 1,
+        "WS9": 0,
+        "WS16": 0,
+        "WS3": 0,
+        "WS17": 0,
+        "WS4": 0,
+        "WS14": 0,
+        "WS18": 0,
+        "WS15": 3,
+        "WS19": 2
+    },
+    "is_breakdown": {
+        "WS1": false,
+        "WS2": false,
+        "WS7": false,
+        "WS6": false,
+        "WS10": false,
+        "WS11": false,
+        "WS12": false,
+        "WS13": false,
+        "WS9": false,
+        "WS16": false,
+        "WS3": false,
+        "WS17": false,
+        "WS4": false,
+        "WS14": false,
+        "WS18": false,
+        "WS15": false,
+        "WS19": false
+    },
+    "is_maintenance": {
+        "WS1": false,
+        "WS2": false,
+        "WS7": false,
+        "WS6": false,
+        "WS10": false,
+        "WS11": false,
+        "WS12": false,
+        "WS13": true,
+        "WS9": false,
+        "WS16": false,
+        "WS3": false,
+        "WS17": false,
+        "WS4": false,
+        "WS14": false,
+        "WS18": false,
+        "WS15": true,
+        "WS19": true
+    },
+    "is_repair": {
+        "WS1": false,
+        "WS2": false,
+        "WS7": false,
+        "WS6": false,
+        "WS10": false,
+        "WS11": false,
+        "WS12": false,
+        "WS13": false,
+        "WS9": false,
+        "WS16": false,
+        "WS3": false,
+        "WS17": false,
+        "WS4": false,
+        "WS14": false,
+        "WS18": false,
+        "WS15": false,
+        "WS19": false
+    },
+    "is_paused": {
+        "WS1": false,
+        "WS2": false,
+        "WS7": false,
+        "WS6": false,
+        "WS10": false,
+        "WS11": false,
+        "WS12": false,
+        "WS13": false,
+        "WS9": false,
+        "WS16": false,
+        "WS3": false,
+        "WS17": false,
+        "WS4": false,
+        "WS14": false,
+        "WS18": false,
+        "WS15": false,
+        "WS19": false
+    },
+    "maintenance_queued": {
+        "WS1": false,
+        "WS2": false,
+        "WS7": false,
+        "WS6": false,
+        "WS10": false,
+        "WS11": false,
+        "WS12": false,
+        "WS13": false,
+        "WS9": false,
+        "WS16": true,
+        "WS3": false,
+        "WS17": true,
+        "WS4": false,
+        "WS14": false,
+        "WS18": true,
+        "WS15": false,
+        "WS19": true
+    }
+}

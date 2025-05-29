@@ -1,0 +1,265 @@
+{
+    "materials": {
+        "RAW_COAL": {"display": "Coal"},
+        "RAW_COPPER": {"display": "Copper"},
+        "RAW_GLASS": {"display": "Glass"},
+        "RAW_RUBBER": {"display": "Rubber"},
+        "COMP_STEEL": {"display": "Steel"},
+        "COMP_WIRE": {"display": "Wire"},
+        "COMP_WINDOW": {"display": "Window"},
+        "COMP_TIRE": {"display": "Tire"},
+        "COMP_SEAT": {"display": "Seat"},
+        "COMP_ENGINE": {"display": "Engine"},
+        "COMP_CASTING": {"display": "Casting"},
+        "COMP_WHEELS": {"display": "Wheels"},
+        "COMP_BODY": {"display": "Body"},
+        "COMP_POWERTRAIN": {"display": "Powertrain"},
+        "COMP_CHASSIS": {"display": "Chassis"},
+        "NEW_CAR": {"display": "Car"}
+    },
+    "tools": {
+        "Wire Shop": {
+            "category": "Raw Processing",
+            "inputs": {"RAW_COPPER": 1, "RAW_RUBBER": 1},
+            "outputs": {"COMP_WIRE": 1},
+            "cycle_time": 3,
+            "costs": {"idle": 1, "processing": 6, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 60
+        },
+        "Window Shop": {
+            "category": "Raw Processing",
+            "inputs": {"RAW_GLASS": 1},
+            "outputs": {"COMP_WINDOW": 1},
+            "cycle_time": 3,
+            "costs": {"idle": 1, "processing": 5, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 50
+        },
+        "Tire Shop": {
+            "category": "Raw Processing",
+            "inputs": {"RAW_RUBBER": 1},
+            "outputs": {"COMP_TIRE": 1},
+            "cycle_time": 3,
+            "costs": {"idle": 1, "processing": 6, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 70
+        },
+        "Seat Shop": {
+            "category": "Raw Processing",
+            "inputs": {"RAW_RUBBER": 1},
+            "outputs": {"COMP_SEAT": 1},
+            "cycle_time": 3,
+            "costs": {"idle": 1, "processing": 7, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 65
+        },
+        "Casting Shop": {
+            "category": "Raw Processing",
+            "inputs": {"COMP_STEEL": 1, "RAW_COAL": 1},
+            "outputs": {"COMP_CASTING": 1},
+            "cycle_time": 5,
+            "costs": {"idle": 1, "processing": 8, "ready": 2},
+            "detection_rate": 1.0,
+            "lifecycle": 50
+        },
+        "Engine Shop": {
+            "category": "Components",
+            "inputs": {"COMP_CASTING": 1},
+            "outputs": {"COMP_ENGINE": 1},
+            "cycle_time": 7,
+            "costs": {"idle": 1, "processing": 8, "ready": 2},
+            "detection_rate": 1.0,
+            "lifecycle": 80
+        },
+        "Wheel Shop": {
+            "category": "Components",
+            "inputs": {"COMP_TIRE": 4, "COMP_CASTING": 1},
+            "outputs": {"COMP_WHEELS": 1},
+            "cycle_time": 3,
+            "costs": {"idle": 1, "processing": 7, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 90
+        },
+        "Body Assembly": {
+            "category": "Final Assembly",
+            "inputs": {"COMP_WINDOW": 2, "COMP_SEAT": 2, "COMP_WIRE": 1},
+            "outputs": {"COMP_BODY": 1},
+            "cycle_time": 7,
+            "costs": {"idle": 2, "processing": 12, "ready": 3},
+            "detection_rate": 1.0,
+            "lifecycle": 120
+        },
+        "Powertrain Assembly": {
+            "category": "Final Assembly",
+            "inputs": {"COMP_ENGINE": 1, "COMP_WIRE": 1},
+            "outputs": {"COMP_POWERTRAIN": 1},
+            "cycle_time": 7,
+            "costs": {"idle": 2, "processing": 10, "ready": 2},
+            "detection_rate": 1.0,
+            "lifecycle": 100
+        },
+        "Chassis Assembly": {
+            "category": "Final Assembly",
+            "inputs": {"COMP_WHEELS": 1, "COMP_CASTING": 1},
+            "outputs": {"COMP_CHASSIS": 1},
+            "cycle_time": 7,
+            "costs": {"idle": 2, "processing": 11, "ready": 2},
+            "detection_rate": 1.0,
+            "lifecycle": 110
+        },
+        "Car Assembly": {
+            "category": "Final Assembly",
+            "inputs": {"COMP_BODY": 1, "COMP_POWERTRAIN": 1, "COMP_CHASSIS": 1},
+            "outputs": {"NEW_CAR": 1},
+            "cycle_time": 7,
+            "costs": {"idle": 2, "processing": 15, "ready": 3},
+            "detection_rate": 1.0,
+            "lifecycle": 150
+        },
+        "Quality Check Coal": {
+            "category": "Quality",
+            "inputs": {"RAW_COAL": 1},
+            "outputs": {"RAW_COAL": 1},
+            "cycle_time": 1,
+            "costs": {"idle": 1, "processing": 3, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 200
+        },
+        "Quality Check Copper": {
+            "category": "Quality",
+            "inputs": {"RAW_COPPER": 1},
+            "outputs": {"RAW_COPPER": 1},
+            "cycle_time": 1,
+            "costs": {"idle": 1, "processing": 3, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 200
+        },
+        "Quality Check Glass": {
+            "category": "Quality",
+            "inputs": {"RAW_GLASS": 1},
+            "outputs": {"RAW_GLASS": 1},
+            "cycle_time": 1,
+            "costs": {"idle": 1, "processing": 3, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 200
+        },
+        "Quality Check Rubber": {
+            "category": "Quality",
+            "inputs": {"RAW_RUBBER": 1},
+            "outputs": {"RAW_RUBBER": 1},
+            "cycle_time": 1,
+            "costs": {"idle": 1, "processing": 3, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 200
+        },
+        "Quality Check Steel": {
+            "category": "Quality",
+            "inputs": {"COMP_STEEL": 1},
+            "outputs": {"COMP_STEEL": 1},
+            "cycle_time": 2,
+            "costs": {"idle": 1, "processing": 4, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 180
+        },
+        "Quality Check Wire": {
+            "category": "Quality",
+            "inputs": {"COMP_WIRE": 1},
+            "outputs": {"COMP_WIRE": 1},
+            "cycle_time": 2,
+            "costs": {"idle": 1, "processing": 4, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 180
+        },
+        "Quality Check Window": {
+            "category": "Quality",
+            "inputs": {"COMP_WINDOW": 1},
+            "outputs": {"COMP_WINDOW": 1},
+            "cycle_time": 2,
+            "costs": {"idle": 1, "processing": 4, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 180
+        },
+        "Quality Check Tire": {
+            "category": "Quality",
+            "inputs": {"COMP_TIRE": 1},
+            "outputs": {"COMP_TIRE": 1},
+            "cycle_time": 2,
+            "costs": {"idle": 1, "processing": 4, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 180
+        },
+        "Quality Check Seat": {
+            "category": "Quality",
+            "inputs": {"COMP_SEAT": 1},
+            "outputs": {"COMP_SEAT": 1},
+            "cycle_time": 3,
+            "costs": {"idle": 1, "processing": 5, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 170
+        },
+        "Quality Check Engine": {
+            "category": "Quality",
+            "inputs": {"COMP_ENGINE": 1},
+            "outputs": {"COMP_ENGINE": 1},
+            "cycle_time": 3,
+            "costs": {"idle": 1, "processing": 5, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 170
+        },
+        "Quality Check Casting": {
+            "category": "Quality",
+            "inputs": {"COMP_CASTING": 1},
+            "outputs": {"COMP_CASTING": 1},
+            "cycle_time": 3,
+            "costs": {"idle": 1, "processing": 5, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 170
+        },
+        "Quality Check Wheels": {
+            "category": "Quality",
+            "inputs": {"COMP_WHEELS": 1},
+            "outputs": {"COMP_WHEELS": 1},
+            "cycle_time": 3,
+            "costs": {"idle": 1, "processing": 5, "ready": 1},
+            "detection_rate": 1.0,
+            "lifecycle": 170
+        },
+        "Quality Check Body": {
+            "category": "Quality",
+            "inputs": {"COMP_BODY": 1},
+            "outputs": {"COMP_BODY": 1},
+            "cycle_time": 4,
+            "costs": {"idle": 2, "processing": 6, "ready": 2},
+            "detection_rate": 1.0,
+            "lifecycle": 160
+        },
+        "Quality Check Powertrain": {
+            "category": "Quality",
+            "inputs": {"COMP_POWERTRAIN": 1},
+            "outputs": {"COMP_POWERTRAIN": 1},
+            "cycle_time": 4,
+            "costs": {"idle": 2, "processing": 6, "ready": 2},
+            "detection_rate": 1.0,
+            "lifecycle": 160
+        },
+        "Quality Check Chassis": {
+            "category": "Quality",
+            "inputs": {"COMP_CHASSIS": 1},
+            "outputs": {"COMP_CHASSIS": 1},
+            "cycle_time": 4,
+            "costs": {"idle": 2, "processing": 6, "ready": 2},
+            "detection_rate": 1.0,
+            "lifecycle": 160
+        },
+        "Quality Check Car": {
+            "category": "Quality",
+            "inputs": {"NEW_CAR": 1},
+            "outputs": {"NEW_CAR": 1},
+            "cycle_time": 5,
+            "costs": {"idle": 2, "processing": 7, "ready": 2},
+            "detection_rate": 1.0,
+            "lifecycle": 150
+        }
+    }
+}

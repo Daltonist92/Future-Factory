@@ -1,0 +1,37 @@
+{
+    "machines": [],
+    "inventories": [
+        [
+            "INV_IRON",
+            2,
+            2
+        ],
+        [
+            "INV_COAL",
+            2,
+            7
+        ],
+        [
+            "INV_COPPER",
+            2,
+            12
+        ],
+        [
+            "INV_GLASS",
+            2,
+            16
+        ],
+        [
+            "INV_RUBBER",
+            2,
+            20
+        ],
+        [
+            "INV_Final",
+            27,
+            2
+        ]
+    ],
+    "arrows": {},
+    "machine_tools": {}
+}

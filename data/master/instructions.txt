@@ -1,0 +1,34 @@
+Welcome to Future Factory!
+
+Goal: Build a factory to produce your cars as fast as you can. Start with $5,000 and initial supplies (iron, coal, copper, glass, rubber) to craft cars using Working Stations (WS) and Inventory Racks (INV).
+
+How to Play:
+1. Buy Stuff:
+   - Click "Buy Working Station" or "Buy Inventory Rack" ($100 each).
+   - Left-click to place on the grid, right-click to cancel.
+
+2. Move Things:
+   - Click and drag WS (squares) or INV (triangles) to reposition.
+
+3. Configure:
+   - Double-click a WS to set a tool (e.g., Smelter makes steel).
+   - Double-click an INV to set accepted materials (e.g., iron, coal).
+
+4. Create Flows:
+   - Right-click a dot on a WS/INV to start a flow.
+   - Right-click another dot to connect—arrows move materials.
+
+5. Run Turns:
+   - Click "Start Auto-Turn" to start reunning time abd processing materials through your factory.
+   - You can always pauseand think!
+
+6. Save & Exit:
+   - "Save Layout" to keep progress.
+   - "Back to Launcher" or "Quit" to leave.
+
+Tips:
+- WS states: Idle (S:1), Processing (S:2), Ready (S:3), Blocked (S:4).
+- Connect INV to WS to supply materials, WS to INV to store outputs.
+- Chain tools: Smelter (iron + coal = steel), Forge (steel = casting), etc., up to Car Assembler.
+
+Have fun building your car empire!
